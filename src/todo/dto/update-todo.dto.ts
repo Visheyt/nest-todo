@@ -1,6 +1,5 @@
-export type Todo = {
-  id: number;
+export class UpdateTodoDTO {
   title: string;
   description: string;
   isCompleted: boolean;
-};
+}
