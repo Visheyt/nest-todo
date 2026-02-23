@@ -23,13 +23,15 @@ export class TodoService {
   }
 
   addTodo(dto: CreateTodoDTO) {
-    const { title, description } = dto;
+    const { title, description, priority, tags } = dto;
 
     const todo = {
       id: this.todos.length + 1,
       title,
       description,
+      priority,
       isCompleted: false,
+      tags,
     };
     this.todos.push(todo);
 
